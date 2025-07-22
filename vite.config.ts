@@ -1,10 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     dts({
       //generates TypeScript declaration files (.d.ts)
       include: ["src/**/*"],
