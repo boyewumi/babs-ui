@@ -2,20 +2,17 @@ import { Button } from './components/Button';
 
 function App() {
   return (
-    <div className="inline-flex flex-1 flex-col justify-center gap-4">
-      <h1 className="text-3xl font-bold text-neutral-600 underline">
-        Hello world!
-      </h1>
+    <div className="mt-10 flex flex-1 flex-col items-center justify-center gap-4">
       <Button href="https://www.google.com/" target="_blank">
-        Click Me
+        Default Variant
       </Button>
       <Button variant="outline" onPress={() => console.log('test')}>
-        Click Me
+        Outline Variant
       </Button>
       <Button variant="secondary" size="lg">
-        Click Me
+        Secondary Variant
       </Button>
-      <Button isDisabled>Click Me</Button>
+      <Button isDisabled>Disabled</Button>
     </div>
   );
 }

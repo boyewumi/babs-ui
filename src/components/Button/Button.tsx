@@ -15,7 +15,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (props.href) {
       return (
-        <Link href={props.href} target={props.target} className="w-full">
+        <Link href={props.href} target={props.target}>
           <button
             {...buttonProps}
             ref={ref}
