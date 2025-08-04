@@ -23,23 +23,23 @@ My shadow system creates depth and hierarchy without being too heavy or distract
 
 ### Basic Shadows
 
-| Token       | Value                          | Usage                          | Notes             |
-| ----------- | ------------------------------ | ------------------------------ | ----------------- |
-| `shadow-xs` | `0 1px 2px rgba(0,0,0,0.05)`   | Subtle hover states            | Barely noticeable |
-| `shadow-sm` | `0 1px 3px rgba(0,0,0,0.1)`    | Cards, dropdowns               | My default choice |
-| `shadow`    | `0 4px 6px rgba(0,0,0,0.1)`    | Buttons, important cards       | Good presence     |
-| `shadow-md` | `0 10px 15px rgba(0,0,0,0.1)`  | Modals, popovers               | Floating elements |
-| `shadow-lg` | `0 20px 25px rgba(0,0,0,0.1)`  | Major overlays                 | Serious elevation |
-| `shadow-xl` | `0 25px 50px rgba(0,0,0,0.25)` | Hero elements, main navigation | Maximum impact    |
+| Token       | Value                                                                 | Usage                          | Notes             |
+| ----------- | --------------------------------------------------------------------- | ------------------------------ | ----------------- |
+| `shadow-xs` | `0 1px 2px 0 rgb(0 0 0 / 0.05)`                                       | Subtle hover states            | Barely noticeable |
+| `shadow-sm` | `0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)`       | Cards, dropdowns               | My default choice |
+| `shadow`    | `0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)`    | Buttons, important cards       | Good presence     |
+| `shadow-md` | `0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)`  | Modals, popovers               | Floating elements |
+| `shadow-lg` | `0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)` | Major overlays                 | Serious elevation |
+| `shadow-xl` | `0 25px 50px -12px rgb(0 0 0 / 0.25)`                                 | Hero elements, main navigation | Maximum impact    |
 
 ### Special Shadows
 
-| Token               | Value                              | Usage                         | Notes              |
-| ------------------- | ---------------------------------- | ----------------------------- | ------------------ |
-| `shadow-primary-sm` | `0 4px 6px rgba(58,48,232,0.1)`    | Primary button hover          | Branded shadow     |
-| `shadow-primary`    | `0 10px 15px rgba(58,48,232,0.1)`  | Focused primary elements      | Purple glow effect |
-| `shadow-inner`      | `inset 0 2px 4px rgba(0,0,0,0.05)` | Input fields, pressed buttons | Inset feeling      |
-| `shadow-none`       | `0 0 transparent`                  | Remove shadows                | Clean, flat look   |
+| Token               | Value                                                                        | Usage                         | Notes              |
+| ------------------- | ---------------------------------------------------------------------------- | ----------------------------- | ------------------ |
+| `shadow-primary-sm` | `0 4px 6px -1px rgb(58 48 232 / 0.1), 0 2px 4px -2px rgb(58 48 232 / 0.1)`   | Primary button hover          | Branded shadow     |
+| `shadow-primary`    | `0 10px 15px -3px rgb(58 48 232 / 0.1), 0 4px 6px -4px rgb(58 48 232 / 0.1)` | Focused primary elements      | Purple glow effect |
+| `shadow-inner`      | `inset 0 2px 4px 0 rgb(0 0 0 / 0.05)`                                        | Input fields, pressed buttons | Inset feeling      |
+| `shadow-none`       | `0 0 transparent`                                                            | Remove shadows                | Clean, flat look   |
 
 ## Usage Guidelines
 

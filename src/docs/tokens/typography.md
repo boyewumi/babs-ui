@@ -13,19 +13,28 @@ My typography system is based on Inter and research from 44+ design systems. I'v
 
 Based on the Major Second type scale ratio (1.125) used by 75% of design systems. I've organized everything into 4 hierarchical levels:
 
-### Display Level
+### Label Level
 
-For hero sections and marketing pages where I need maximum impact.
+Small supporting text that helps users understand interfaces.
 
-| Token              | Size | Line Height | Letter Spacing | Usage                 | Notes                              |
-| ------------------ | ---- | ----------- | -------------- | --------------------- | ---------------------------------- |
-| `text-display-sm`  | 36px | 44px        | -0.025em       | Small hero headings   | Good for cards or sections         |
-| `text-display-md`  | 42px | 50px        | -0.025em       | Medium hero text      | Sweet spot for most heroes         |
-| `text-display-lg`  | 48px | 58px        | -0.025em       | Large hero text       | Big impact, use sparingly          |
-| `text-display-xl`  | 60px | 72px        | -0.025em       | Extra large headlines | Landing pages, major announcements |
-| `text-display-2xl` | 72px | 86px        | -0.025em       | Huge display text     | Marketing pages only               |
-| `text-display-3xl` | 78px | 94px        | -0.025em       | Massive headlines     | Rare use, big statements           |
-| `text-display-4xl` | 96px | 116px       | -0.025em       | Maximum impact        | Special occasions only             |
+| Token           | Size | Line Height | Letter Spacing | Usage                                            | Notes                                    |
+| --------------- | ---- | ----------- | -------------- | ------------------------------------------------ | ---------------------------------------- |
+| `text-label-sm` | 10px | 14px        | 0.01em         | Tiny labels, badges                              | Minimum readable size                    |
+| `text-label`    | 12px | 17px        | 0.01em         | **Standard labels** - form labels, small UI text | My most common label size                |
+| `text-label-md` | 13px | 18px        | 0.005em        | Slightly larger labels                           | When 12px feels too small                |
+| `text-label-lg` | 14px | 20px        | 0.005em        | Large labels, button text                        | Overlap with body, but different purpose |
+
+### Body Level
+
+The readable text that makes up most of my content.
+
+| Token          | Size | Line Height | Letter Spacing | Usage                         | Notes                              |
+| -------------- | ---- | ----------- | -------------- | ----------------------------- | ---------------------------------- |
+| `text-body-sm` | 12px | 18px        | 0              | Fine print, captions          | Use sparingly, can be hard to read |
+| `text-body-xs` | 13px | 19px        | 0              | Small text, metadata          | Slightly more readable than sm     |
+| `text-body`    | 14px | 21px        | 0              | **My default body text**      | Perfect for most UI content        |
+| `text-body-md` | 16px | 24px        | 0              | Comfortable reading, articles | When readability is priority       |
+| `text-body-lg` | 18px | 27px        | 0              | Large body text, intros       | Good for marketing copy            |
 
 ### Heading Level
 
@@ -42,28 +51,19 @@ My workhorse headings for content hierarchy and UI sections.
 | `text-heading-3xl` | 40px | 52px        | -0.02em        | Large page titles           | When I need more impact than H1    |
 | `text-heading-4xl` | 48px | 60px        | -0.025em       | Hero headings in content    | Bridge between heading and display |
 
-### Body Level
+### Display Level
 
-The readable text that makes up most of my content.
+For hero sections and marketing pages where I need maximum impact.
 
-| Token          | Size | Line Height | Letter Spacing | Usage                         | Notes                              |
-| -------------- | ---- | ----------- | -------------- | ----------------------------- | ---------------------------------- |
-| `text-body-sm` | 12px | 18px        | 0              | Fine print, captions          | Use sparingly, can be hard to read |
-| `text-body-xs` | 13px | 19px        | 0              | Small text, metadata          | Slightly more readable than sm     |
-| `text-body`    | 14px | 21px        | 0              | **My default body text**      | Perfect for most UI content        |
-| `text-body-md` | 16px | 24px        | 0              | Comfortable reading, articles | When readability is priority       |
-| `text-body-lg` | 18px | 27px        | 0              | Large body text, intros       | Good for marketing copy            |
-
-### Label Level
-
-Small supporting text that helps users understand interfaces.
-
-| Token           | Size | Line Height | Letter Spacing | Usage                                            | Notes                                    |
-| --------------- | ---- | ----------- | -------------- | ------------------------------------------------ | ---------------------------------------- |
-| `text-label-sm` | 10px | 14px        | 0.01em         | Tiny labels, badges                              | Minimum readable size                    |
-| `text-label`    | 12px | 17px        | 0.01em         | **Standard labels** - form labels, small UI text | My most common label size                |
-| `text-label-md` | 13px | 18px        | 0.005em        | Slightly larger labels                           | When 12px feels too small                |
-| `text-label-lg` | 14px | 20px        | 0.005em        | Large labels, button text                        | Overlap with body, but different purpose |
+| Token              | Size | Line Height | Letter Spacing | Usage                 | Notes                              |
+| ------------------ | ---- | ----------- | -------------- | --------------------- | ---------------------------------- |
+| `text-display-sm`  | 36px | 44px        | -0.025em       | Small hero headings   | Good for cards or sections         |
+| `text-display-md`  | 42px | 50px        | -0.025em       | Medium hero text      | Sweet spot for most heroes         |
+| `text-display-lg`  | 48px | 58px        | -0.025em       | Large hero text       | Big impact, use sparingly          |
+| `text-display-xl`  | 60px | 72px        | -0.025em       | Extra large headlines | Landing pages, major announcements |
+| `text-display-2xl` | 72px | 86px        | -0.025em       | Huge display text     | Marketing pages only               |
+| `text-display-3xl` | 78px | 94px        | -0.025em       | Massive headlines     | Rare use, big statements           |
+| `text-display-4xl` | 96px | 116px       | -0.025em       | Maximum impact        | Special occasions only             |
 
 ## Font Weights
 
