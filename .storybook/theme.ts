@@ -4,7 +4,7 @@ export default create({
   base: 'light',
 
   brandTitle: 'babs-ui',
-  brandUrl: 'https://babsoyewumi.com/',
+  brandUrl: '/storybook',
   brandImage: './logo.png',
   brandTarget: '_self',
 
